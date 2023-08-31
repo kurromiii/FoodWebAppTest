@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="FoodWebApp:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>FoodWebApp</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="FoodWebApp-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="FoodWebApp:war exploded" />
+    </root>
+  </artifact>
+</component>

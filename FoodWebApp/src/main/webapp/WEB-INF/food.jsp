@@ -1,0 +1,253 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div class="w3-top w3-hide-small">
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+        <a href="#" class="w3-bar-item w3-button">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn">account
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href='/login-form-v5/Login_v5/signin.html'>customer</a>
+                <a href='/login-form-v5/Login_v5/receptionSignin.html'>reception</a>
+            </div>
+        </div>
+        <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+        <a href="#order" class="w3-bar-item w3-button">ORDER</a>
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+
+    </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-padding">
+        <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+        <span class="w3-text-white w3-hide-small" style="font-size:100px">Welcome<br>to our restaurant!</span>
+        <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>welcome<br>to our restaurant!</b></span>
+        <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+    </div>
+</header>
+<!-- Customer-->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale-min w3-xlarge" id="customer">
+    <div class="w3-customer">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Customer</h1>
+        <p><span class="w3-tag">HELLO!</span>We are grateful to be chosen by you, hope you have a memorable time at your own restaurant, ...! </p>
+        <p class="w3-xxlarge"><strong>Order</strong> your desired food simply by filling the required information.</p>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Family" required name="Family"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Phone Number" required name="Phone Number"></p>
+            <p><button class="w3-button w3-light-grey w3-section" type="submit">SUBMIT</button></p>
+        </form>
+        <p>Find us at some address at some place or call us at 05050515-122330</p>
+    </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="assets/img/menu.jpg" class="w3-image w3-greyscale" style="width:100%;" id="menu">
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" >
+    <div class="w3-content">
+
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+        <div class="w3-row w3-center w3-border w3-border-dark-grey">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Burger');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Burger</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Drinks</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Side Dish');">
+                <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Side Dish</div>
+            </a>
+        </div>
+
+        <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">120T</span></h1>
+            <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil<button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+            <h1><b>Cheese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">120T</span></h1>
+            <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)<button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">120T</span></h1>
+            <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Pepperoni</b> <span class="w3-right w3-tag w3-dark-grey w3-round">150T</span></h1>
+            <p class="w3-text-grey">pizza sauce, mozzarella cheese, pepperoni <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">150T</span></h1>
+            <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">120T</span></h1>
+            <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+        </div>
+
+        <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">90T</span></h1>
+            <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Summer Asian Slaw</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100T</span></h1>
+            <p class="w3-text-grey">?<button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Broccoli Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">50T</span></h1>
+            <p class="w3-text-grey">?<button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Pasta salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100T</span></h1>
+            <p class="w3-text-grey">? <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Seasonal</b> <span class="w3-right w3-tag w3-dark-grey w3-round">70T</span></h1>
+            <p class="w3-text-grey">? <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Sezar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">100T</span></h1>
+            <p class="w3-text-grey">? <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+
+        </div>
+
+
+        <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">50T</span></h1>
+            <p class="w3-text-grey">Ask the waiter <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Milk Soup</b> <span class="w3-right w3-tag w3-dark-grey w3-round">50T</span></h1>
+            <p class="w3-text-grey">Grain, onion, milk, parsley <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">60T</span></h1>
+            <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">60T</span></h1>
+            <p class="w3-text-grey">Tomatoes and mozzarella <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+        </div>
+
+        <div id="Burger" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Double-Double</b> <span class="w3-right w3-tag w3-dark-grey w3-round">90T</span></h1>
+            <p class="w3-text-grey">Beef patties, American cheese, tomato, onion <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">90T</span></h1>
+            <p class="w3-text-grey">Chicken, tomato, onion <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <p class="w3-text-grey">Bacon, tomato, onion, special sauce <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Spicy</b> <span class="w3-right w3-tag w3-dark-grey w3-round">90T</span></h1>
+            <p class="w3-text-grey">Bacon, tomato, extra onion, special Hot sauce <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+        </div>
+
+
+        <div id="Drinks" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>Soda</b> <span class="w3-right w3-tag w3-dark-grey w3-round">20T</span></h1>
+            <p class="w3-text-grey">? <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+            <hr>
+
+            <h1><b>Water</b> <span class="w3-right w3-tag w3-dark-grey w3-round">10T</span></h1>
+            <p class="w3-text-grey">? <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+        </div>
+
+        <div id="Side Dish" class="w3-container menu w3-padding-32 w3-white">
+            <h1><b>French Fries</b> <span class="w3-right w3-tag w3-dark-grey w3-round">40T</span></h1>
+            <p class="w3-text-grey">? <button class="w3-right w3-tag w3-grey w3-round">Add to Cart</button></p>
+        </div>
+
+
+    </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="assets/img/order.jpg" class="w3-image w3-greyscale" style="width:100%;" id="order">
+<!-- Order-->
+<div class="w3-container w3-padding-64 w3-black w3-grayscale-min w3-xlarge">
+    <div class="w3-order">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Order</h1>
+        <p>Now you can complete your order!</p>
+        <img src="assets/img/order1.jpg" style="width:70%;">
+        <p class="w3-xxlarge"><strong>Peak</strong> your table to get your order at the right place!</p>
+        <p>1.A nice view!</p>
+        <img src="assets/img/nice%20view.jpg" style="width:40%;">
+        <p>2.A calm place just at the corner!</p>
+        <img src="assets/img/calm.jpg" style="width:40%;">
+        <p>3.A warm place to enjoy with family!</p>
+        <img src="assets/img/family.jpg" style="width:40%;">
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Table number" required name="Table number"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+            <form action="files/get_data10.php" method="post">
+                Please Set The Date!
+                <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Set the time" required name="LiveDate"></p>
+                <p><button class="w3-button w3-light-grey w3-section" type="submit">SUBMIT</button></p>
+            </form>
+        </form>
+    </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+    <div class="w3-content">
+        <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+        <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p><strong>The Chef?</strong> Mr. Italiano himself<img src="assets/img/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+        <p>We are proud of our interiors.</p>
+        <img src="assets/img/about.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+        <h1><b>Opening Hours</b></h1>
+
+        <div class="w3-row">
+            <div class="w3-col s6">
+                <p>Mon & Tue CLOSED</p>
+                <p>Wednesday 10.00 - 24.00</p>
+                <p>Thursday 10:00 - 24:00</p>
+            </div>
+            <div class="w3-col s6">
+                <p>Friday 10:00 - 12:00</p>
+                <p>Saturday 10:00 - 23:00</p>
+                <p>Sunday Closed</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-red";
+    }
+    document.getElementById("myLink").click();
+</script>
